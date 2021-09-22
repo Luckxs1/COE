@@ -116,6 +116,9 @@ hr.light {
   margin-top:  .8rem;
   margin-bottom: 1rem;
 }
+hr.light1 {
+  border: 1px solid #d5d5d5;
+}
 footer a {
   color:  #d5d5d5;
 }
@@ -245,6 +248,10 @@ figure {
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
+}
+footer {
+  margin: 0;
+  padding: 0;
 }
 
 
