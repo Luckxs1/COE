@@ -11,9 +11,13 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 
+
 </head>
 <body>
-
+	
+	<span onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+	  </svg></span>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
@@ -24,19 +28,19 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item active">
-			<a class="nav-link" href="#">Home</a>
+			<a class="nav-link" href="#Home">Home</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Achievments</a>
+			<a class="nav-link" href="#Achievments">Achievments</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Professors</a>
+			<a class="nav-link" href="#Professors">Professors</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">Downloads</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">About</a>
+			<a class="nav-link" href="#About">About</a>
 		</li>
 	</ul>
 </div>
@@ -71,7 +75,7 @@
 		</div>
 	</div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="Home">
 	<div class="row">
 		<div class="col-md-12 col-lg-6">
 		<div>
@@ -101,7 +105,7 @@
 		</div>
 	</div>
 </figure>
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="Achievments">
 	<div class="row welcome text-center">
 		<div class="col-12">
 			<h1 class="display-4 orange1">COE AT THE TOP</h1>
@@ -149,7 +153,7 @@
 		</div>
 	</div>
 </div>
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="Professors">
 	<div class="row padding">
 		<div class="col-lg-6 pl-5">
 			<h1 class="orange1">All<br> &nbsp;About <br> &nbsp;&nbsp;Professor</h1>
@@ -175,7 +179,7 @@
 		
 	</div>
 </div>
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="About">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -218,6 +222,27 @@
 
 
 </body>
+<script>
+		
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+		</script>
 </html>
 
 
